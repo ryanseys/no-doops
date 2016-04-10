@@ -2,7 +2,13 @@
 
 > Chrome extension for quickly eliminating duplicate tabs
 
-## Install
+## Install from Chrome store
+
+Install it directly from the Chrome store by visiting this link:
+
+https://chrome.google.com/webstore/detail/no-doops/ngmglkohoadkcbgmecchdhcmpodmpheo
+
+## Install from source
 
 1. Clone this repo
 2. Open `chrome://extensions/` in Google Chrome
