@@ -2,6 +2,12 @@
 
 > Chrome extension for quickly eliminating duplicate tabs
 
+## Install
+
+1. Clone this repo
+2. Open `chrome://extensions/` in Google Chrome
+3. Click "Load unpacked extension", and select the cloned folder from Step 1
+
 ## License
 
 Copyright 2016 Google Inc. All Rights Reserved.
