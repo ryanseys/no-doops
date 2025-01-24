@@ -14,24 +14,23 @@
  * limitations under the License.
  */
 /* globals chrome */
-const onClickListener = (tab) => {
-  var query = {
+const onClickListener = (_tab) => {
+  const query = {
     windowId: chrome.windows.WINDOW_ID_CURRENT
   }
 
-  chrome.tabs.query(query, function (tabs) {
-    var urls = {}
-    tabs.forEach(function (tab, index) {
-      var tabUrl = tab.url
+  chrome.tabs.query(query, (tabs) => {
+    let urls = {}
+    tabs.forEach((tab, _index) => {
+      let tabUrl = tab.url
       if (urls[tabUrl] === true) {
         // tab already exists, so remove it.
-        chrome.tabs.remove(tab.id)
+        chrome.tabs.remove(tab.id);
       } else {
-        urls[tabUrl] = true
+        urls[tabUrl] = true;
       }
     })
   })
-}
+};
 
 chrome.action.onClicked.addListener(onClickListener);
-
