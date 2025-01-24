@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 /* globals chrome */
-chrome.browserAction.onClicked.addListener(function (tab) {
+const onClickListener = (tab) => {
   var query = {
     windowId: chrome.windows.WINDOW_ID_CURRENT
   }
@@ -31,4 +31,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
       }
     })
   })
-})
+}
+
+chrome.action.onClicked.addListener(onClickListener);
+
